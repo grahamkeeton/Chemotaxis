@@ -1,17 +1,33 @@
  //declare bacteria variables here   
-
+Bacteria bob = new Bacteria(500,500);  
+Bacteria jerry = new Bacteria(250,250);
+Bacteria rose = new Bacteria(750,750);
+Bacteria jesus= new Bacteria(750,250);
+Bacteria james = new Bacteria(250,750);
 
  void setup()   
  {     
  	size(1000,1000);
  }
 
- 	Bacteria bob = new Bacteria(mouseX,mouseY);  
  void draw()   
  {  
- 	
+ 	background(255);
  	bob.move();
- 	bob.show();   
+ 	bob.show();
+
+ 	jerry.move();
+ 	jerry.show(); 
+
+ 	rose.move();
+ 	rose.show(); 
+
+ 	jesus.move();
+ 	jesus.show(); 
+
+ 	james.move();
+ 	james.show(); 
+    
  }  
 
  class Bacteria    
@@ -19,8 +35,6 @@
 
  	int myX;
  	int myY;
- 	int num;
- 	
 
  	Bacteria(int x,int y){
  		myX=x;
@@ -29,24 +43,8 @@
  	}
 
  	void move(){
- 		//myX+=(int)(Math.random()*6)-4;
- 		//myY-=(int)(Math.random()*6)-4;
- 		
- 		if (mouseX<myX){
- 			myX+=(int)(Math.random()*6)-4;
- 		}
- 			
- 		if (mouseY>myX){
- 			myX-=(int)(Math.random()*6)-4;
- 		}
-
- 		if (mouseY<myY){
- 			myY+=(int)(Math.random()*6)-4;
- 		}
-
- 		if (mouseY>myY){
- 			myY-=(int)(Math.random()*6)-4;
- 		}
+ 		myX+=(int)(Math.random()*7)-3;
+ 		myY-=(int)(Math.random()*7)-3;
 
 
 
