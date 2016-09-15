@@ -1,19 +1,38 @@
  //declare bacteria variables here   
-Bacteria bob = new Bacteria(500,500);  
+/*Bacteria bob = new Bacteria(500,500);  
 Bacteria jerry = new Bacteria(250,250);
 Bacteria rose = new Bacteria(750,750);
 Bacteria jesus= new Bacteria(750,250);
 Bacteria james = new Bacteria(250,750);
+*/
+Bacteria [] apt;
+
+int ku=mouseX;
+int gu=mouseY;
+boolean tit = false;
 
  void setup()   
  {     
+
+ 	apt = new Bacteria[100];
+ 	for (int i=0;i<100;i++){
+ 		apt[i]=new Bacteria(500,500);
+ 	}
+
  	size(1000,1000);
  }
 
  void draw()   
  {  
  	background(255);
- 	bob.move();
+
+
+ 	for(int i=0;i<apt.length;i++){
+ 		apt[i].move();
+ 		apt[i].show();
+ 	}
+
+ 	/*bob.move();
  	bob.show();
 
  	jerry.move();
@@ -22,12 +41,13 @@ Bacteria james = new Bacteria(250,750);
  	rose.move();
  	rose.show(); 
 
- 	jesus.move();
+ 	jesus.mov
+ 	e();
  	jesus.show(); 
 
  	james.move();
  	james.show(); 
-    
+    */
  }  
 
  class Bacteria    
