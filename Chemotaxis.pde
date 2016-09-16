@@ -14,8 +14,8 @@ boolean tit = false;
  void setup()   
  {     
 
- 	apt = new Bacteria[100];
- 	for (int i=0;i<100;i++){
+ 	apt = new Bacteria[1000];
+ 	for (int i=0;i<1000;i++){
  		apt[i]=new Bacteria(500,500);
  	}
 
