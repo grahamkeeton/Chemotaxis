@@ -7,10 +7,6 @@ Bacteria james = new Bacteria(250,750);
 */
 Bacteria [] apt;
 
-int ku=mouseX;
-int gu=mouseY;
-boolean tit = false;
-
  void setup()   
  {     
 
